@@ -1,1 +1,1 @@
-mysql> Select region from cities;
+Select region from cities;
