@@ -1,3 +1,3 @@
-mysql> Select *
-    -> from cities
-    -> ORDER BY region, population DESC;
+Select *
+from cities
+ORDER BY region, population DESC;
