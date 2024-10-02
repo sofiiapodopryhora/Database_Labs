@@ -1,3 +1,4 @@
-SELECT name
+Select *
 from cities
-where population > 1000000;
+where region in ("E", "W")
+order by population;
