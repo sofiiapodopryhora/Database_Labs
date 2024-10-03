@@ -1,3 +1,3 @@
 SELECT COUNT(*) AS city_count
 FROM cities
-WHERE region = 'E';
+WHERE region IN('E');
