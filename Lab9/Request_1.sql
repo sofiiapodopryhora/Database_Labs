@@ -22,11 +22,11 @@ CREATE TABLE Tasks (
     description TEXT
 );
 
--- Таблиця для cтворення зв'язуючої таблиці ProjectUsers для асоціації кількох користувачів із проєктами
-CREATE TABLE ProjectUsers (
-    project_id INT REFERENCES Projects(project_id),
-    user_id INT REFERENCES Users(user_id),
-    PRIMARY KEY (project_id, user_id)
+-- Таблиця для зв'язку між завданнями і користувачами (багато до багатьох)
+CREATE TABLE TaskUsers (
+    task_id INT REFERENCES Tasks(id),
+    user_id INT REFERENCES Users(id), 
+    PRIMARY KEY (task_id, user_id) 
 );
 
 -- Таблиця для cтворення таблиці Files
